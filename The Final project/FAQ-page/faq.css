@@ -1,0 +1,157 @@
+*{
+  margin: 0;
+  padding-inline-start: 0;
+  font-family: 'Kalam', cursive;
+}
+
+/* background colour */
+body{
+  background: #A2B38B;
+}
+
+/* NAV BAR */
+nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: sticky;
+  right: 0;
+  left: 0;
+  background: #4f5a40;
+}
+
+/* LOGO SETTINGS */
+nav .logo img{
+  width: 100px;
+  cursor: pointer;
+  margin: 7px 0;
+}
+
+/* NAVBAR DISPLAY */
+nav ul li{
+  display: inline-block;
+  margin: 0 15px;
+}
+
+/* NAVBAR TEXT VIEW */
+nav ul li a{
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-size: 17px;
+  transition: 0.5;
+}
+
+/*THE LINE THING THAT UNDERSCORES THE TEXT*/
+nav ul li a::after{
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #9E8077;
+  display: block;
+  transition: 0.2s linear;
+}
+
+/* DISPLAY WHEN HOVERING OVER*/
+nav ul li a:hover::after{
+  width:100% ; 
+}
+
+/* ADDS COLOUR WHEN YOU HOVER */
+nav ul li a:hover{
+  color: #9E8077;
+}
+
+img {
+  width: 100%;
+}
+
+.text{
+  display: flex;
+  justify-content: center;
+  background: #A2B38B;
+  text-align: center;
+  color: white;
+}
+
+h1{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  color: white;
+}
+
+/* SPACE ROUND PICS */
+.menu .menu-header {
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* THE BORDER SORROUNDING ROUND THE PICTURE */
+.menu .menu-content {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 50px 0;
+
+}
+
+/* PICTURE SHAPE */
+.menu .menu-content .Hana .Hana-image img {
+  border-radius: 50%;
+}
+
+/* THE PROPORTIONS OF THE HEADER */
+.menu .menu-content .Hana{
+  width: 250px;
+}
+
+/* THE QUESTIONS SLIDES */
+
+/* the box colour and size */
+#questions li{
+  width: 98%;
+  margin-bottom: 10px;
+  margin-left: 5px;
+  background: white;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+/* The text display  */
+#questions li label{
+  padding-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  color: #4f5a40;
+}
+
+/* The little down arrow on the side of the box */
+#questions li label span{
+  transform: rotate(90deg);
+  font-size: 22px;
+  color: #4f5a40;
+}
+
+/* removes the radio check box thing */
+#questions label + input[type="radio"]{
+  display: none;
+}
+
+/* Hides the text so you only see the label  */
+#questions .content{
+  padding: 0 10px;
+  line-height: 26px;
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+#questions label + input[type="radio"]:checked + .content{
+  max-height: 400px;
+}
