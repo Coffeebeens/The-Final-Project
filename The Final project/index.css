@@ -1,0 +1,151 @@
+/* PAGE SETUP */
+*{
+  margin: 0;
+  padding-inline-start: 0;
+  font-family: 'Kalam', cursive;
+}
+
+/* NAV BAR */
+nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  right: 0;
+  left: 0;
+  background: #4f5a40;
+}
+
+/* LOGO SETTINGS */
+nav .logo img{
+  width: 100px;
+  cursor: pointer;
+  margin: 7px 0;
+}
+
+/* NAVBAR DISPLAY */
+nav ul li{
+  display: inline-block;
+  margin: 0 15px;
+}
+
+/* NAVBAR TEXT VIEW */
+nav ul li a{
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-size: 17px;
+  transition: 0.5s;
+}
+
+/*THE LINE THING THAT UNDERSCORES THE TEXT*/
+nav ul li a::after{
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #9E8077;
+  display: block;
+  transition: 0.2s linear;
+}
+
+/* DISPLAY WHEN HOVERING OVER*/
+nav ul li a:hover::after{
+  width:100% ; 
+}
+
+/* ADDS COLOUR WHEN YOU HOVER */
+nav ul li a:hover{
+  color: #9E8077;
+}
+
+
+/* IMAGE SIZE */
+img {
+    width: 100%;
+}
+
+/* SPACE ROUND PICS */
+.menu .menu-header {
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* THE BORDER SORROUNDING ROUND THE PICTURE */
+.menu .menu-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 50px 0;
+  flex-wrap: wrap;
+  background-color: #A2B38B;
+}
+
+
+/* PICTURE SHAPES */
+.menu .menu-content .Hana .Hana-image img {
+  border-radius: 50%;
+}
+
+.menu .menu-content .not-hana .not-hana-image img {
+  border-radius: 50%;
+}
+
+.menu .menu-content .lana-cat .lana-cat-image img {
+  border-radius: 50%;
+}
+
+.menu .menu-content .Hana-body,
+.not-hana,
+.lana-cat-body {
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* THE THICK FONT COLOUR */
+.menu .menu-content .Hana-body h2,
+.not-hana h2,
+.lana-cat-body h2 {
+  color: WHITE;
+}
+
+/* THE COLOUR OF THE TEXT */
+.menu .menu-content .Hana-body label,
+.not-hana label,
+.lana-cat-body label {
+  margin-top: 10px;
+  color: white;
+}
+
+/* THE PROPORTIONS OF THE HEADER */
+.menu .menu-content .Hana,
+.not-hana,
+.lana-cat {
+  width: 250px;
+}
+
+.text{
+  display: flex;
+  justify-content: center;
+  background: #A2B38B;
+  text-align: center;
+  color: white;
+}
+
+/* COLOUR, FLEX AND POSITION OF THE MENU BACKGROUND */
+.background {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #A2B38B;
+    padding: 50px 0;
+    flex-wrap: wrap;
+}
+
+/* IMAGE SIZE */
+.background .card {
+    width: 280px;
+    margin: 20px;
+}
+
