@@ -14,7 +14,7 @@ nav{
   display: flex;
   justify-content: space-around;
   align-items: center;
-  position: sticky;
+  position: fixed;
   right: 0;
   left: 0;
   background: #4f5a40;
