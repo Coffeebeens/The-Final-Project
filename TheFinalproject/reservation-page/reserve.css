@@ -1,0 +1,46 @@
+/* the gradient */
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(to bottom right, rgb(233, 169, 120), rgb(226, 143, 234));
+}
+
+
+/* submit button */
+#button {
+    color: rgb(233, 169, 120);
+    background-color: white;
+    border: 1px solid rgb(233, 169, 120);
+    border-radius: 4px;
+    padding: 0 15px;
+    cursor: pointer;
+    height: 32px;
+    font-size: 14px;
+ }
+ 
+ /* white frame */
+.box{
+    max-width: 700px;
+    width: 100%;
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 5px;
+}
+
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 95%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+

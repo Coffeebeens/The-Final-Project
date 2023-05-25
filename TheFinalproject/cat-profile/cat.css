@@ -1,0 +1,122 @@
+/* PAGE SETUP */
+*{
+  margin: 0;
+  padding-inline-start: 0;
+  font-family: 'Kalam', cursive;
+}
+
+/* NAV BAR */
+nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  right: 0;
+  left: 0;
+  background: #4f5a40;
+}
+
+/* LOGO SETTINGS */
+nav .logo img{
+  width: 100px;
+  cursor: pointer;
+  margin: 7px 0;
+}
+
+/* NAVBAR DISPLAY */
+nav ul li{
+  display: inline-block;
+  margin: 0 15px;
+}
+
+/* NAVBAR TEXT VIEW */
+nav ul li a{
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-size: 17px;
+  transition: 0.5s;
+}
+
+/*THE LINE THING THAT UNDERSCORES THE TEXT*/
+nav ul li a::after{
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #9E8077;
+  display: block;
+  transition: 0.2s linear;
+}
+
+/* DISPLAY WHEN HOVERING OVER*/
+nav ul li a:hover::after{
+  width:100% ; 
+}
+
+/* ADDS COLOUR WHEN YOU HOVER */
+nav ul li a:hover{
+  color: #9E8077;
+}
+
+  
+/* THE DEVIDER BOARD HEADER THING */
+.devide {
+  background-color: #4f5a40;
+  width: 100%;
+}
+
+/* FELX AND TEXT POSITION */
+.devide .devide-header {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* TEXT COLOUR */
+.devide-header h3 {
+  color: WHITE;
+  padding: 10px 30px;
+}
+
+/* IMAGE SIZE */
+img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.background .header, .h1{
+  color: white;
+  margin-top: 10px;
+  width: 100%;
+  text-align: center;
+}
+  
+/* TEXT  */
+.card-body{
+  text-align: center;
+}
+  
+/* COLOUR, FLEX AND POSITION OF THE MENU BACKGROUND */
+.background {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #A2B38B;
+  padding: 50px 0;
+  flex-wrap: wrap;
+}
+  
+/* IMAGE SIZE */
+.background .card {
+  width: 280px;
+  margin: 20px;
+  transition: all 0.2s ease-in-out;
+}
+
+.background .card:hover {
+  transform: scale(1.1);
+}
+  
+  
+  
